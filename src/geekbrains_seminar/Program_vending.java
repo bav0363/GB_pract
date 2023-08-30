@@ -22,11 +22,16 @@ public class Program_vending {
         Product product_3 = new BottleOfMilk("Бутылка с молоком", "Молоко", 200, 0.9, 2.5);
         Product product_4 = new BottleOfMilk("Бутылка с молоком", "Молоко", 250, 0.9, 3.2);
 
+        Product product_5 = new Chocolate("Шоколад", "snickers", 150, 80);
+        Product product_6 = new Chocolate("Шоколад", "bounty", 170, 100);
+
         List<Product> products = new ArrayList<>();
         products.add(product_1);
         products.add(product_2);
         products.add(product_3);
         products.add(product_4);
+        products.add(product_5);
+        products.add(product_6);
 
         for (Product product: products) {
             System.out.println(product.displayInfo());
@@ -34,13 +39,18 @@ public class Program_vending {
 
         System.out.println("------------------------");
 
-        Vending vending_water = new Vending(products);
+        Vending vending_product = new Vending(products);
 
-        BottleOfWater bottleOfWater = vending_water.getBottleOfWater("Бутылка с водой", 2.5);
+        BottleOfWater bottleOfWater = vending_product.getBottleOfWater("Бутылка с водой", 2.5);
         checkRezult(bottleOfWater);
 
-        BottleOfMilk bottleOfMilk = vending_water.getBottleOfMilk("Бутылка с молоком", 2.5);
+        BottleOfMilk bottleOfMilk = vending_product.getBottleOfMilk("Бутылка с молоком", 2.5);
         checkRezult(bottleOfMilk);
+
+        Chocolate chocolate = vending_product.getChocolate("Шоколад", 80);
+        checkRezult(chocolate);
+
+
 
 
 

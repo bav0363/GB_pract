@@ -33,4 +33,23 @@ public class Vending {
         }
         return  null;
     }
+
+    public Chocolate getChocolate(String name, double weight){
+        for (Product product: products) {
+            if (product instanceof Chocolate){
+                Chocolate chocolate = (Chocolate) product;
+                if (chocolate.getName().equals(name) && chocolate.getWeight() == weight){
+                    return chocolate;
+                }
+            }
+        }
+        return  null;
+    }
+
+
+
+
+
+
+
 }
