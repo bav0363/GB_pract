@@ -1,4 +1,4 @@
-package geekbrains_seminar;
+package geekbrains_seminar_1;
 
 public class BottleOfWater extends Product{
 

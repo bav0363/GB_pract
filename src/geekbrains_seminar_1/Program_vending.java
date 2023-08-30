@@ -1,7 +1,6 @@
-package geekbrains_seminar;
+package geekbrains_seminar_1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Program_vending {
