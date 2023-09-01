@@ -48,10 +48,5 @@ public class Program_vending {
 
         Chocolate chocolate = vending_product.getChocolate("Шоколад", 80);
         checkRezult(chocolate);
-
-
-
-
-
     }
 }
