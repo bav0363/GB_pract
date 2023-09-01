@@ -14,6 +14,9 @@ public class Program {
         cats.add(cat_2);
         cats.add(cat_3);
 
+        System.out.println("Прибежали голодные коты ...");
+        System.out.println();
+
         for (Cat cat: cats) {
             cat.info();
         }
