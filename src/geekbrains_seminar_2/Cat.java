@@ -39,4 +39,9 @@ public class  Cat {
     public boolean isSatiety() {
         return satiety;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Кличка: %s, Аппетит: %d, Сытость: %b", name, appetite, satiety);
+    }
 }
