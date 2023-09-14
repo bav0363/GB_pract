@@ -53,7 +53,7 @@ public class Program {
          * Пересыпем фрукты из одной коробки в другую (В один ящик не получится пересыпать разные фрукты).
          * */
 
-        box_2.merge(box_2);
+        box_1.merge(box_2);
 
         System.out.println(box_1);
         System.out.println(box_2);
