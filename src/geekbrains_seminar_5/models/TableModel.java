@@ -25,12 +25,6 @@ public class TableModel implements Model {
         return tables;
     }
 
-    public void view(){
-        for (Table table : loadTables()){
-            System.out.println(table.getReservations());
-        }
-    }
-
     public int reservationTable(Date reservationDate, int tableNo, String name) {
         for (Table table : loadTables()) {
             if (table.getNo() == tableNo) {
