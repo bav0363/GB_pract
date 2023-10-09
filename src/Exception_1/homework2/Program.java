@@ -1,6 +1,5 @@
-package Exception_1.homework;
+package Exception_1.homework2;
 
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Program {

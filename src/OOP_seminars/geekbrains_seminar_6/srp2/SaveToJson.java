@@ -7,7 +7,7 @@ public class SaveToJson {
 
     //region Public Methods
     public void saveToJson(Order order) {
-        String fileName = "order.json";
+        String fileName = "order1.json";
         try (FileWriter writer = new FileWriter(fileName, false)) {
             writer.write("{\n");
             writer.write("\"clientName\":\""+ order.getClientName() + "\",\n");
