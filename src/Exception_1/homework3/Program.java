@@ -10,15 +10,15 @@ public class Program {
 
         int resultFio = inputFio();
         try {
-            if (resultFio == -1) throw new Exception("Недопустимые символы, при вводе ФИО");
-            else if (resultFio == -2) throw new Exception("Вы ввели лишние данные, при вводе ФИО");
-            else if (resultFio == -3) throw new Exception("Вы ввели не все данные, при вводе ФИО");
+            if (resultFio == -1) throw new Exception("Недопустимые символы при вводе ФИО");
+            else if (resultFio == -2) throw new Exception("Вы ввели лишние данные при вводе ФИО");
+            else if (resultFio == -3) throw new Exception("Введены неполные данные");
             else if(resultFio == -4) throw new Exception("Некорректный ввод даты рождения");
             else if(resultFio == -5) throw new Exception("Некорректный ввод телефона");
-            else if(resultFio == -6) throw new Exception("Слишком много цифр в номере телефона");
-            else if(resultFio == -7) throw new Exception("Слошком мало цифр в номере телефона");
+            else if(resultFio == -6) throw new Exception("Много цифр в номере телефона");
+            else if(resultFio == -7) throw new Exception("Мало цифр в номере телефона");
             else if(resultFio == -8) throw new Exception("Некорректный ввод пола");
-            else if(resultFio == -9) throw new Exception("Слишком мало букв в ФИО");
+            else if(resultFio == -9) throw new Exception("Мало букв в ФИО");
             else{
                 try (FileWriter writer = new FileWriter(fileName, true)) {
                     String result = String.valueOf(sb);
