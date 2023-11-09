@@ -46,6 +46,7 @@ public class JobAgency implements Publisher {
         System.out.println("__________");
         System.out.println("Список оставшихся соискателей после рассылки: " + observers);
         System.out.println();
+//        sdfghjkl
     }
 
 }
